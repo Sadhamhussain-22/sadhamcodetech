@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>codtech.task4</groupId>
+  <artifactId>RecommendationSystem</artifactId>
+  <version>1.0</version>
+
+  <properties>
+    <!-- Use release instead of source/target -->
+    <maven.compiler.release>10</maven.compiler.release>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+      <!-- Apache Mahout Library (updated version) -->
+      <dependency>
+          <groupId>org.apache.mahout</groupId>
+          <artifactId>mahout-core</artifactId>
+          <version>0.13.0</version>
+      </dependency>
+
+      <!-- For reading CSV files -->
+      <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-csv</artifactId>
+          <version>1.9.0</version>
+      </dependency>
+
+      <!-- SLF4J Simple Logger to fix logging warning -->
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-simple</artifactId>
+          <version>1.7.36</version>
+      </dependency>
+  </dependencies>
+</project>
